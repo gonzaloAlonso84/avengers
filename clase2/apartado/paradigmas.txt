@@ -1,0 +1,32 @@
+Lenguaje estructurado
+   - Control de flujo for, while, if, (a===b)?0:1, operadores
+   - prodecimiento o funcion que recibe unos parametros y en caso
+     de ser funcion puede retornar un parametro.
+     
+     callstack 
+
+Objetos 
+
+   - No se hablo nunca de clases
+   - Encpasulamiento (state/behavior) (estado/compartamiento)
+   - Polimorfismo (Cambiar en caliente)
+
+
+Funcional
+
+   - Functions as data (que puedo pasar funciones como parametros)
+   - String, integer, boolean, function
+   
+Funcional puro (que tiene una comprension muy sofisticada)
+          (x*2-3,1+4543/405)*0 Esto da 0.
+          Funcional puro hace optimizaciones
+
+          Haskell y lisp
+
+Funcional impuro. No hace optimizaciones.
+
+          Java, C#, javascript, Scala, kotlin, c tambien lo permite.
+
+
+
+

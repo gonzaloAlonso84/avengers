@@ -1,0 +1,40 @@
+Browser ----------------------------------------------------------> Server
+
+        Login credenciales                              OK
+
+El server me a enviar un token (en realidad 2 tokens)
+
+Netflix siempre estamos logueados. Ampliar el plan o cambiar tarjeta.
+
+2 token.
+
+El primer token [ROLE_ADMIN, ROLE_USER] esto dura mientras estoy conectado
+apago la pc. o pasan 24 hs. el tiempo que yo quiera.
+Se vence el token.
+El refresh token, el segundo token, tiene un duracion de un año.
+Que puedo hacer con el refresh. Roles [ROLE_USER].
+
+"TOTALMENTE CUSTOMIZABLE".
+
+Con el primer token voy a hacer las peticiones a la api del server
+y el server viendo que mi token es valido, me responde lo que le pido
+(Si es que tengo autorizacion)
+
+Authentication y Authorization
+
+Por donde se pasan las credenciales y el token
+
+HTTP 1.1 GET /
+authorization : basic base64(usu:pass)
+
+Que es codificacion es cambiar la base. Ejemplo Numero 5
+
+Base 2   000000000101
+Base 8   5
+Base Hex 05 (0.1.2.3.4.5.6.7.8.9.10.A.B.C.D.E.F)
+Base 10  5
+Base 64  NQ==
+
+Porque se usa mucho la 64. Para codificar imagenes.
+
+
