@@ -16,7 +16,24 @@ _.delay(()=>{
 }, 200)
 
 function consultarLibros() {
-    alert('saaaaaaa')
+    fetch('/peliculas', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin':'*',
+            'X-JWT-TOKEN': localStorage.getItem('token')
+        }})
+        .then(function(response) {
+            console.log('response =', response);
+            return response.json();
+        })
+        .then(function(data) {
+            // anaisis del token
+            console.log('data = ', data);
+        })
+        .catch(function(err) {
+            console.error(err);
+        });
 }
 
 function realizarLogin() {

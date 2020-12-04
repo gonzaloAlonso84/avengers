@@ -17,11 +17,27 @@ function crearToken(sub, roles) {
     return elToken;
 }
 
+// boolean
 function verificarToken(token) {
-
+    try {
+        let datos = jwtlib.verify(token, CLAVE_PRIVADA)
+        return {
+            isPresent : true,
+            datos
+        }
+    }
+    catch (err) {
+        console.log('token fulero')
+        console.log(err)
+        return {
+            isPresent : false,
+            mensaje : err
+        }
+    }
 }
 
 
 module.exports = {
-    crearToken
+    crearToken,
+    verificarToken
 }
