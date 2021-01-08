@@ -1,0 +1,8 @@
+docker ps | awk '{print $1}' | grep -v CONT | xargs docker stop
+
+Al ser una arquitectura inmutable entonces todos los containers se pueden 
+revivir
+
+docker start y el alias o el id de el container
+
+
